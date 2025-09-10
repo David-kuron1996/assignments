@@ -1,17 +1,31 @@
-basicSalary = prompt("Enter your basic salary: ");
-benefits = prompt("Enter your benefits: ");
+let basicsalary = (prompt("Enter your basic salary here"));
+let benifits = (prompt("Enter your benifits here"));
 
+function calculateNetSalary(basicsalary, benifits) {
+    const grossSalary = basicsalary + benifits;
 
+    const paye = 0.0275
+    const NHIF = 0.0825
+    
 
+    const Netsalary = grossSalary - ( 0.0275 + 0.0825);
 
+    console.log("Gross Salary:" , grossSalary);
+    console.log("PAYE:" , paye);
+    console.log("NHIF:" , NHIF)
+    console.log("Net Salary:", Netsalary)
 
-
-function calculateNetSalary(basicSalary, benefits) {
-    let grossSalary = (basicSalary) + (benefits);
-    console.log("Gross Salary: " + grossSalary);
-    return grossSalary;
+    
 
 }
+calculateNetSalary(basicsalary, benifits)
+console.log(calculateNetSalary(basicsalary, benifits))
 
-calculateGrossSalary(basicSalary, benefits);
-   
+
+
+
+
+
+
+
+
