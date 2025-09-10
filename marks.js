@@ -6,17 +6,17 @@ getGrade(Marks);
 
 function getGrade(Marks) {
     if (Marks > 79 && Marks <= 100) {
-        console.log("A");
+        return grade="A";
     } else if (Marks >= 60 && Marks <= 79) {
-        console.log("B");
+        return grade="B";
     } else if (Marks >= 49 && Marks <= 59) {
-        console.log("C");
+        return grade="C";
     } else if (Marks >= 40 && Marks <= 49) {
-        console.log("D");
+        return grade="D";
     } else if (Marks >= 0 && Marks <= 39) {
-        console.log("E");
+        return grade="E";
     } else {
-        console.log("Invalid marks");
+        return "Invalid marks";
     }
 }
 
