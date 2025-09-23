@@ -10,10 +10,10 @@ function calculateNetSalary(basicsalary, benifits) {
 
     const Netsalary = grossSalary - ( 0.0275 + 0.0825);
 
-    return ("Gross Salary:" , grossSalary);
-    return ("PAYE:" , paye);
-    return ("NHIF:" , NHIF)
-    return ("Net Salary:", Netsalary)
+    console.log("Gross Salary:" , grossSalary);
+    console.log ("PAYE:" , paye);
+    console.log ("NHIF:" , NHIF)
+    console.log ("Net Salary:", Netsalary)
 
     
 
